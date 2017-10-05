@@ -1,0 +1,367 @@
+sgminer-sgminer.o: sgminer.c config.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curses.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdarg.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stddef.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/_mingw.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/types.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdlib.h \
+ lib/string.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/string.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdbool.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdint.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdint.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/unistd.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/io.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/process.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/getopt.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/time.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/time.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/math.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/assert.h \
+ lib/signal.h config.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/signal.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/limits.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/stat.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsock2.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windows.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windef.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnt.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winerror.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/basetsd.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pshpack4.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/poppack.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wincon.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winbase.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wingdi.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winuser.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnls.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winver.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnetwk.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winreg.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsvc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/cderr.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/dde.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ddeml.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/dlgs.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/imm.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/lzexpand.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/mmsystem.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/nb30.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcdce.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/basetyps.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcdcep.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcnsi.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcnterr.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/shellapi.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pshpack2.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winperf.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/commdlg.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winspool.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ole2.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/objbase.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcndr.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcnsip.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/objfwd.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wtypes.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/unknwn.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/objidl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/cguid.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/olectlid.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/oleauto.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/oaidl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/oleidl.h \
+ ccan/opt/opt.h ccan/compiler/compiler.h ccan/typesafe_cb/typesafe_cb.h \
+ submodules/jansson/src/jansson.h submodules/jansson/src/jansson_config.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlver.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/system.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ws2tcpip.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlbuild.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlrules.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/easy.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/multi.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/typecheck-gcc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/libgen.h \
+ sph/sph_sha2.h sph/sph_types.h sph/sph_blake.h compat.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/errno.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/fcntl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pthread.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/setjmp.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sched.h \
+ miner.h algorithm/sysendian.h algorithm.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl_platform.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/xmmintrin.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mmintrin.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mm_malloc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/emmintrin.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/inttypes.h \
+ ocl/build_kernel.h logging.h config.h elist.h uthash.h logging.h util.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/semaphore.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/malloc.h \
+ ADL_SDK/adl_sdk.h ADL_SDK/adl_structures.h ADL_SDK/adl_defines.h \
+ findnonce.h adl.h driver-opencl.h bench_block.h pool.h config_parser.h \
+ api.h events.h
+
+config.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curses.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdarg.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stddef.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/_mingw.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/types.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdlib.h:
+
+lib/string.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/string.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdbool.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdint.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdint.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/unistd.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/io.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/process.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/getopt.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/time.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/time.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/math.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/assert.h:
+
+lib/signal.h:
+
+config.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/signal.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/limits.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/stat.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsock2.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windows.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windef.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnt.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winerror.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/basetsd.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pshpack4.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/poppack.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wincon.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winbase.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wingdi.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winuser.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnls.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winver.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnetwk.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winreg.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsvc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/cderr.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/dde.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ddeml.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/dlgs.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/imm.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/lzexpand.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/mmsystem.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/nb30.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcdce.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/basetyps.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcdcep.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcnsi.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcnterr.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/shellapi.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pshpack2.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winperf.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/commdlg.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winspool.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ole2.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/objbase.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcndr.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/rpcnsip.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/objfwd.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wtypes.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/unknwn.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/objidl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/cguid.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/olectlid.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/oleauto.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/oaidl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/oleidl.h:
+
+ccan/opt/opt.h:
+
+ccan/compiler/compiler.h:
+
+ccan/typesafe_cb/typesafe_cb.h:
+
+submodules/jansson/src/jansson.h:
+
+submodules/jansson/src/jansson_config.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlver.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/system.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ws2tcpip.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlbuild.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlrules.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/easy.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/multi.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/typecheck-gcc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/libgen.h:
+
+sph/sph_sha2.h:
+
+sph/sph_types.h:
+
+sph/sph_blake.h:
+
+compat.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/errno.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/fcntl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pthread.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/setjmp.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sched.h:
+
+miner.h:
+
+algorithm/sysendian.h:
+
+algorithm.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl_platform.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/xmmintrin.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mmintrin.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mm_malloc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/emmintrin.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/inttypes.h:
+
+ocl/build_kernel.h:
+
+logging.h:
+
+config.h:
+
+elist.h:
+
+uthash.h:
+
+logging.h:
+
+util.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/semaphore.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/malloc.h:
+
+ADL_SDK/adl_sdk.h:
+
+ADL_SDK/adl_structures.h:
+
+ADL_SDK/adl_defines.h:
+
+findnonce.h:
+
+adl.h:
+
+driver-opencl.h:
+
+bench_block.h:
+
+pool.h:
+
+config_parser.h:
+
+api.h:
+
+events.h:

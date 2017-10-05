@@ -1,0 +1,218 @@
+algorithm/sgminer-blakecoin.o: algorithm/blakecoin.c \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stddef.h lib/string.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/string.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/_mingw.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/limits.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdint.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdint.h \
+ sph/sph_blake.h sph/sph_types.h algorithm/blakecoin.h miner.h config.h \
+ algorithm/sysendian.h algorithm.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl_platform.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/xmmintrin.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mmintrin.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mm_malloc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdlib.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/errno.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/emmintrin.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/inttypes.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdbool.h \
+ ocl/build_kernel.h logging.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdarg.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/time.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/time.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pthread.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/setjmp.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sched.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/types.h \
+ submodules/jansson/src/jansson.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h \
+ submodules/jansson/src/jansson_config.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlver.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/system.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windows.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windef.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnt.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winerror.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/basetsd.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pshpack4.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/poppack.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wincon.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winbase.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wingdi.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winuser.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnls.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winver.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnetwk.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winreg.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsvc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsock2.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ws2tcpip.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlbuild.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlrules.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/easy.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/multi.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/typecheck-gcc.h \
+ elist.h uthash.h logging.h util.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/semaphore.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/malloc.h \
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/io.h \
+ ADL_SDK/adl_sdk.h ADL_SDK/adl_structures.h ADL_SDK/adl_defines.h \
+ ccan/opt/opt.h ccan/compiler/compiler.h config.h \
+ ccan/typesafe_cb/typesafe_cb.h
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stddef.h:
+
+lib/string.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/string.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/_mingw.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/limits.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdint.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdint.h:
+
+sph/sph_blake.h:
+
+sph/sph_types.h:
+
+algorithm/blakecoin.h:
+
+miner.h:
+
+config.h:
+
+algorithm/sysendian.h:
+
+algorithm.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/CL/cl_platform.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/xmmintrin.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mmintrin.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/mm_malloc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdlib.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/errno.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/emmintrin.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/inttypes.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdbool.h:
+
+ocl/build_kernel.h:
+
+logging.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdarg.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/time.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/time.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pthread.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/setjmp.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sched.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/types.h:
+
+submodules/jansson/src/jansson.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:
+
+submodules/jansson/src/jansson_config.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlver.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/system.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windows.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/windef.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnt.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winerror.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/basetsd.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/pshpack4.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/poppack.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wincon.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winbase.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/wingdi.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winuser.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnls.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winver.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winnetwk.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winreg.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsvc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/winsock2.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/ws2tcpip.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlbuild.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curlrules.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/easy.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/multi.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/curl.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/curl/typecheck-gcc.h:
+
+elist.h:
+
+uthash.h:
+
+logging.h:
+
+util.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/semaphore.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/malloc.h:
+
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/io.h:
+
+ADL_SDK/adl_sdk.h:
+
+ADL_SDK/adl_structures.h:
+
+ADL_SDK/adl_defines.h:
+
+ccan/opt/opt.h:
+
+ccan/compiler/compiler.h:
+
+config.h:
+
+ccan/typesafe_cb/typesafe_cb.h:
