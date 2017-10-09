@@ -3,8 +3,7 @@
 
 #include "miner.h"
 
-extern int phi1612_test(unsigned char *pdata, const unsigned char *ptarget,
-			uint32_t nonce);
-extern void phi1612_regenhash(struct work *work);
+void precalc_hash_phi1612(dev_blk_ctx *blk, uint32_t *midstate, uint32_t *pdata);
+void phi1612_regenhash(struct work *work);
 
 #endif

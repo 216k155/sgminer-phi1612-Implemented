@@ -450,7 +450,7 @@ static cl_int queue_sibcoin_kernel(struct __clState *clState, struct _dev_blk_ct
   return status;
 }
 
-static cl_int queue_skunkhash_kernel(struct __clState *clState, struct _dev_blk_ctx *blk, __maybe_unused cl_uint threads)
+static cl_int queue_phi1612_kernel(struct __clState *clState, struct _dev_blk_ctx *blk, __maybe_unused cl_uint threads)
 {
   cl_kernel *kernel;
   unsigned int num;
@@ -465,12 +465,16 @@ static cl_int queue_skunkhash_kernel(struct __clState *clState, struct _dev_blk_
   num = 0;
   CL_SET_ARG(clState->CLbuffer0);
   CL_SET_ARG(clState->padbuffer8);
-  // cubehash search1()
+  // jh search1()
+  CL_NEXTKERNEL_SET_ARG_0(clState->padbuffer8);
+  // cubehash search2()
   kernel = clState->extra_kernels;
   CL_SET_ARG_0(clState->padbuffer8);
-  // fugue search2()
+  // fugue search3()
   CL_NEXTKERNEL_SET_ARG_0(clState->padbuffer8);
-  // gost/streebog search3()
+  // gost/streebog search4()
+  CL_NEXTKERNEL_SET_ARG_0(clState->padbuffer8);
+  // echo - search5()
   num = 0;
   CL_NEXTKERNEL_SET_ARG(clState->padbuffer8);
   CL_SET_ARG(clState->outputBuffer);
@@ -504,41 +508,6 @@ static cl_int queue_skein2_kernel(struct __clState *clState, struct _dev_blk_ctx
   return status;
 }
 
-//phi1612 kernel <------------------------------------------------------------------------------------------
-
-static cl_int queue_phi1612_kernel(struct __clState *clState, struct _dev_blk_ctx *blk, __maybe_unused cl_uint threads)
-{
-  cl_kernel *kernel;
-  unsigned int num;
-  cl_ulong le_target;
-  cl_int status = 0;
-
-  le_target = *(cl_ulong *)(blk->work->device_target + 24);
-  flip80(clState->cldata, blk->work->data);
-  status = clEnqueueWriteBuffer(clState->commandQueue, clState->CLbuffer0, true, 0, 80, clState->cldata, 0, NULL, NULL);
-  // skein search()
-  kernel = &clState->kernel;
-  num = 0;
-  CL_SET_ARG(clState->CLbuffer0);
-  CL_SET_ARG(clState->padbuffer8);
-  // jh search1()
-  kernel = clState->extra_kernels;
-  CL_SET_ARG_0(clState->padbuffer8);
-  // cubehash search2()
-  kernel = clState->extra_kernels;
-  CL_SET_ARG_0(clState->padbuffer8);
-  // fugue search3()
-  CL_NEXTKERNEL_SET_ARG_0(clState->padbuffer8);
-  // gost/streebog search4()
-  CL_NEXTKERNEL_SET_ARG_0(clState->padbuffer8);
-  // echo search5()
-  num = 0;
-  CL_NEXTKERNEL_SET_ARG(clState->padbuffer8);
-  CL_SET_ARG(clState->outputBuffer);
-  CL_SET_ARG(le_target);
-
-  return status;
-}
 
 static cl_int queue_bitblock_kernel(struct __clState *clState, struct _dev_blk_ctx *blk, __maybe_unused cl_uint threads)
 {

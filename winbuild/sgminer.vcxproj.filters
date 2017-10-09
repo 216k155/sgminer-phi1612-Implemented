@@ -146,6 +146,8 @@
     <ClCompile Include="..\algorithm\phi1612.c">
       <Filter>Source Files\algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="..\algorithm\skunk.c">
+    <Filter>Source Files\algorithm</Filter>
     <ClCompile Include="..\algorithm\marucoin.c">
       <Filter>Source Files\algorithm</Filter>
     </ClCompile>
