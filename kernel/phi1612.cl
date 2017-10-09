@@ -58,7 +58,7 @@ typedef int sph_s32;
 #define SPH_ROTR64(x, n) SPH_ROTL64(x, (64 - (n)))
 
 #define SPH_JH_64 1
-#define SPH_ECHO_64 1
+#define SPH_ECHO_64 1	
 #define SPH_CUBEHASH_UNROLL 0
 
 #include "skein.cl"
@@ -535,126 +535,61 @@ __kernel void search3(__global hash_t* hashes, __global uint* output, const ulon
   if (out[3] <= target)
     output[atomic_inc(output+0xFF)] = gid;
 
- // echo
-  sph_u64 W00, W01, W10, W11, W20, W21, W30, W31, W40, W41, W50, W51, W60, W61, W70, W71, W80, W81, W90, W91, WA0, WA1, WB0, WB1, WC0, WC1, WD0, WD1, WE0, WE1, WF0, WF1;
-  sph_u64 Vb00, Vb01, Vb10, Vb11, Vb20, Vb21, Vb30, Vb31, Vb40, Vb41, Vb50, Vb51, Vb60, Vb61, Vb70, Vb71;
-  Vb00 = Vb10 = Vb20 = Vb30 = Vb40 = Vb50 = Vb60 = Vb70 = 512UL;
-  Vb01 = Vb11 = Vb21 = Vb31 = Vb41 = Vb51 = Vb61 = Vb71 = 0;
+   // echo
 
-  sph_u32 K0 = 512;
-  sph_u32 K1 = 0;
-  sph_u32 K2 = 0;
-  sph_u32 K3 = 0;
+    sph_u64 W00, W01, W10, W11, W20, W21, W30, W31, W40, W41, W50, W51, W60, W61, W70, W71;
+    sph_u64 W80, W81, W90, W91, WA0, WA1, WB0, WB1, WC0, WC1, WD0, WD1, WE0, WE1, WF0, WF1;
+    sph_u64 Vb00, Vb01, Vb10, Vb11, Vb20, Vb21, Vb30, Vb31, Vb40, Vb41, Vb50, Vb51, Vb60, Vb61, Vb70, Vb71;
+    Vb00 = Vb10 = Vb20 = Vb30 = Vb40 = Vb50 = Vb60 = Vb70 = 512UL;
+    Vb01 = Vb11 = Vb21 = Vb31 = Vb41 = Vb51 = Vb61 = Vb71 = 0;
 
-  W00 = Vb00;
-  W01 = Vb01;
-  W10 = Vb10;
-  W11 = Vb11;
-  W20 = Vb20;
-  W21 = Vb21;
-  W30 = Vb30;
-  W31 = Vb31;
-  W40 = Vb40;
-  W41 = Vb41;
-  W50 = Vb50;
-  W51 = Vb51;
-  W60 = Vb60;
-  W61 = Vb61;
-  W70 = Vb70;
-  W71 = Vb71;
-  W80 = hash.h8[0];
-  W81 = hash.h8[1];
-  W90 = hash.h8[2];
-  W91 = hash.h8[3];
-  WA0 = hash.h8[4];
-  WA1 = hash.h8[5];
-  WB0 = hash.h8[6];
-  WB1 = hash.h8[7];
-  WC0 = 0x80;
-  WC1 = 0;
-  WD0 = 0;
-  WD1 = 0;
-  WE0 = 0;
-  WE1 = 0x200000000000000;
-  WF0 = 0x200;
-  WF1 = 0;
+    sph_u32 K0 = 512;
+    sph_u32 K1 = 0;
+    sph_u32 K2 = 0;
+    sph_u32 K3 = 0;
 
-  for (unsigned u = 0; u < 10; u ++)
-    BIG_ROUND;
+    W00 = Vb00;
+    W01 = Vb01;
+    W10 = Vb10;
+    W11 = Vb11;
+    W20 = Vb20;
+    W21 = Vb21;
+    W30 = Vb30;
+    W31 = Vb31;
+    W40 = Vb40;
+    W41 = Vb41;
+    W50 = Vb50;
+    W51 = Vb51;
+    W60 = Vb60;
+    W61 = Vb61;
+    W70 = Vb70;
+    W71 = Vb71;
+    W80 = hash.h8[0];
+    W81 = hash.h8[1];
+    W90 = hash.h8[2];
+    W91 = hash.h8[3];
+    WA0 = hash.h8[4];
+    WA1 = hash.h8[5];
+    WB0 = hash.h8[6];
+    WB1 = hash.h8[7];
+    WC0 = 0x80;
+    WC1 = 0;
+    WD0 = 0;
+    WD1 = 0;
+    WE0 = 0;
+    WE1 = 0x200000000000000;
+    WF0 = 0x200;
+    WF1 = 0;
 
-  hashp->h8[0] = hash.h8[0] ^ Vb00 ^ W00 ^ W80;
-  hashp->h8[1] = hash.h8[1] ^ Vb01 ^ W01 ^ W81;
-  hashp->h8[2] = hash.h8[2] ^ Vb10 ^ W10 ^ W90;
-  hashp->h8[3] = hash.h8[3] ^ Vb11 ^ W11 ^ W91;
-  hashp->h8[4] = hash.h8[4] ^ Vb20 ^ W20 ^ WA0;
-  hashp->h8[5] = hash.h8[5] ^ Vb21 ^ W21 ^ WA1;
-  hashp->h8[6] = hash.h8[6] ^ Vb30 ^ W30 ^ WB0;
-  hashp->h8[7] = hash.h8[7] ^ Vb31 ^ W31 ^ WB1;
+    for (unsigned u = 0; u < 10; u ++) {
+        BIG_ROUND;
+    }
 
-  barrier(CLK_GLOBAL_MEM_FENCE);
-}
+    //hash.h8[0] = hash.h8[0] ^ Vb00 ^ W00 ^ W80;
+    //hash.h8[1] = hash.h8[1] ^ Vb01 ^ W01 ^ W81;
+    //hash.h8[2] = hash.h8[2] ^ Vb10 ^ W10 ^ W90;
+    hash.h8[3] = hash.h8[3] ^ Vb11 ^ W11 ^ W91;
 
-__attribute__((reqd_work_group_size(WORKSIZE, 1, 1)))
-__kernel void search11(__global hash_t* hashes)
-{
-  uint gid = get_global_id(0);
-  __global hash_t *hash = &(hashes[gid-get_global_offset(0)]);
-
-  #ifdef INPUT_BIG_LOCAL
-    __local sph_u32 T512_L[1024];
-    __constant const sph_u32 *T512_C = &T512[0][0];
-
-    int init = get_local_id(0);
-    int step = get_local_size(0);
-    for (int i = init; i < 1024; i += step)
-      T512_L[i] = T512_C[i];
-
-    barrier(CLK_LOCAL_MEM_FENCE);
-  #else
-    #define INPUT_BIG_LOCAL INPUT_BIG
-  #endif
-
-  sph_u32 c0 = HAMSI_IV512[0], c1 = HAMSI_IV512[1], c2 = HAMSI_IV512[2], c3 = HAMSI_IV512[3];
-  sph_u32 c4 = HAMSI_IV512[4], c5 = HAMSI_IV512[5], c6 = HAMSI_IV512[6], c7 = HAMSI_IV512[7];
-  sph_u32 c8 = HAMSI_IV512[8], c9 = HAMSI_IV512[9], cA = HAMSI_IV512[10], cB = HAMSI_IV512[11];
-  sph_u32 cC = HAMSI_IV512[12], cD = HAMSI_IV512[13], cE = HAMSI_IV512[14], cF = HAMSI_IV512[15];
-  sph_u32 m0, m1, m2, m3, m4, m5, m6, m7;
-  sph_u32 m8, m9, mA, mB, mC, mD, mE, mF;
-  sph_u32 h[16] = { c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, cA, cB, cC, cD, cE, cF };
-
-  #define buf(u) hash->h1[i + u]
-
-  for(int i = 0; i < 64; i += 8)
-  {
-    INPUT_BIG_LOCAL;
-    P_BIG;
-    T_BIG;
-  }
-
-  #undef buf
-  #define buf(u) (u == 0 ? 0x80 : 0)
-
-  INPUT_BIG_LOCAL;
-  P_BIG;
-  T_BIG;
-
-  #undef buf
-  #define buf(u) (u == 6 ? 2 : 0)
-
-  INPUT_BIG_LOCAL;
-  PF_BIG;
-  T_BIG;
-
-  for (unsigned u = 0; u < 16; u ++)
-      hash->h4[u] = h[u];
-
-  barrier(CLK_GLOBAL_MEM_FENCE);
-}
-
-__attribute__((reqd_work_group_size(WORKSIZE, 1, 1)))
-__kernel void search12(__global hash_t* hashes)
-{
-  uint gid = get_global_id(0);
-  uint offset = get_global_offset(0);
-  __global hash_t *hash = &(hashes[gid-offset]);
+    if (hash.h8[3] <= target)
+        output[output[0xFF]++] = SWAP4(gid);
 }

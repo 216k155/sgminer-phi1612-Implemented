@@ -331,16 +331,16 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/bh/gpuminer-phi1612/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/bh/sgminer-phi1612-Implemented/missing aclocal-1.15
 ADL_CPPFLAGS = 
 ALLOCA = 
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 APPLE_UNIVERSAL_BUILD = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/bh/gpuminer-phi1612/missing autoconf
-AUTOHEADER = ${SHELL} /home/bh/gpuminer-phi1612/missing autoheader
-AUTOMAKE = ${SHELL} /home/bh/gpuminer-phi1612/missing automake-1.15
+AUTOCONF = ${SHELL} /home/bh/sgminer-phi1612-Implemented/missing autoconf
+AUTOHEADER = ${SHELL} /home/bh/sgminer-phi1612-Implemented/missing autoheader
+AUTOMAKE = ${SHELL} /home/bh/sgminer-phi1612-Implemented/missing automake-1.15
 AWK = mawk
 BITSIZEOF_PTRDIFF_T = 
 BITSIZEOF_SIG_ATOMIC_T = 
@@ -466,7 +466,7 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/bh/gpuminer-phi1612/missing makeinfo
+MAKEINFO = ${SHELL} /home/bh/sgminer-phi1612-Implemented/missing makeinfo
 MANIFEST_TOOL = :
 MATH_LIBS = -lm
 MKDIR_P = /bin/mkdir -p
@@ -536,10 +536,10 @@ VMAJ = 5
 WCHAR_T_SUFFIX = 
 WINT_T_SUFFIX = 
 WS2_LIBS = 
-abs_builddir = /home/bh/gpuminer-phi1612
-abs_srcdir = /home/bh/gpuminer-phi1612
-abs_top_builddir = /home/bh/gpuminer-phi1612
-abs_top_srcdir = /home/bh/gpuminer-phi1612
+abs_builddir = /home/bh/sgminer-phi1612-Implemented
+abs_srcdir = /home/bh/sgminer-phi1612-Implemented
+abs_top_builddir = /home/bh/sgminer-phi1612-Implemented
+abs_top_srcdir = /home/bh/sgminer-phi1612-Implemented
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -573,7 +573,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/bh/gpuminer-phi1612/install-sh
+install_sh = ${SHELL} /home/bh/sgminer-phi1612-Implemented/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1654,7 +1654,7 @@ algorithm/sgminer-blakecoin.obj: algorithm/blakecoin.c
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(sgminer_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o algorithm/sgminer-blakecoin.obj `if test -f 'algorithm/blakecoin.c'; then $(CYGPATH_W) 'algorithm/blakecoin.c'; else $(CYGPATH_W) '$(srcdir)/algorithm/blakecoin.c'; fi`
 
 algorithm/sgminer-phi1612.o: algorithm/phi1612.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(sgminer_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT algorithm/sgminer-phi1612.o -MD -MP -MF algorithm/$(DEPDIR)/sgminer-phi1612.Tpo -c -o algorithm/sgminer-phi1612.o `test -f 'algorithm/phi1612.c' || echo '$(srcdir)/'`algorithm/phi1612.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(sgminer_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT algorithm/sgminer-phi1612.o -MD -MP -MF algorithm/$(DEPDIR)/sgminer-phi1612.Tpo -c -o algorithm/sgminer-phi1612.o `test -f 'algorithm/phi1612.c' || echo '$(srcdir)/'`algorithm/sphi1612.c
 	$(AM_V_at)$(am__mv) algorithm/$(DEPDIR)/sgminer-phi1612.Tpo algorithm/$(DEPDIR)/sgminer-phi1612.Po
 #	$(AM_V_CC)source='algorithm/phi1612.c' object='algorithm/sgminer-phi1612.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
