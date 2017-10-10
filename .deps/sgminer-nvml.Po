@@ -1,3 +1,0 @@
-sgminer-nvml.o: nvml.c config.h
-
-config.h:
