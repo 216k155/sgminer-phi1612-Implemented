@@ -41,6 +41,7 @@ typedef enum {
   ALGO_DECRED,
   ALGO_VANILLA,
   ALGO_LBRY,
+  ALGO_PHI,
   ALGO_SIBCOIN 
 } algorithm_type_t;
 
