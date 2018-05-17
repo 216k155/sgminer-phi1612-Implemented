@@ -8,11 +8,11 @@ This is a multi-threaded multi-pool GPU miner with ATI GPU monitoring,
 based on cgminer by Con Kolivas (ckolivas), which is in turn based on
 cpuminer by Jeff Garzik (jgarzik).
 
-**releases**: https://github.com/sgminer-dev/sgminer/releases
+**releases**: https://github.com/216k155/sgminer-phi1612-Implemented/releases
 
-**git tree**: https://github.com/sgminer-dev/sgminer
+**git tree**: https://github.com/216k155/sgminer-phi1612-Implemented
 
-**bugtracker**: https://github.com/sgminer-dev/sgminer/issues
+**bugtracker**: https://github.com/216k155/sgminer-phi1612-Implemented/issues
 
 **irc**: `#sgminer` and `#sgminer-dev` on freenode
 
