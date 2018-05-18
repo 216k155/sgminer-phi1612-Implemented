@@ -50,12 +50,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="jansson_config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="jansson_private_config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\submodules\jansson\src\hashtable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
